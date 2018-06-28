@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArmsComponent.iml" filepath="$PROJECT_DIR$/ArmsComponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonRes/CommonRes.iml" filepath="$PROJECT_DIR$/CommonRes/CommonRes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonSDK/CommonSDK.iml" filepath="$PROJECT_DIR$/CommonSDK/CommonSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonService/CommonService.iml" filepath="$PROJECT_DIR$/CommonService/CommonService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-detail/module-detail.iml" filepath="$PROJECT_DIR$/module-detail/module-detail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-home/module-home.iml" filepath="$PROJECT_DIR$/module-home/module-home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-search/module-search.iml" filepath="$PROJECT_DIR$/module-search/module-search.iml" />
+    </modules>
+  </component>
+</project>
