@@ -34,7 +34,7 @@
         android:textSize="@dimen/public_font_18sp"
         android:textColor="@color/public_white"
         android:layout_gravity="center"
-        tools:text="@string/public_app_name"/>
+        tools:text="Sale"/>
 
 
 </com.jess.arms.widget.autolayout.AutoToolbar>

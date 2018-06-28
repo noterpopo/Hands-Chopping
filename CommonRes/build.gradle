@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
-    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         minSdkVersion rootProject.ext.android["minSdkVersion"]
@@ -24,10 +24,11 @@ android {
 }
 
 dependencies {
-    api fileTree(dir: 'libs', include: ['*.jar'])
-    api project(":CommonSDK") //因为 CommonRes 依赖了 CommonSDK, 所以如果业务模块需要公共 UI 组件就依赖 CommonRes, 如果不需要就只依赖 CommonSDK
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':CommonSDK')
+    //因为 CommonRes 依赖了 CommonSDK, 所以如果业务模块需要公共 UI 组件就依赖 CommonRes, 如果不需要就只依赖 CommonSDK
     api(rootProject.ext.dependencies["cardview-v7"]) {
-            exclude module: 'support-annotations'
+        exclude module: 'support-annotations'
     }
     api rootProject.ext.dependencies["paginate"]
     api rootProject.ext.dependencies["lottie"]

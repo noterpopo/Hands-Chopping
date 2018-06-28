@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.jessyan.armscomponent.commonres.view.AutoCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginTop="@dimen/public_mar_top_10px"
+    android:layout_marginBottom="@dimen/public_mar_bottom_16px"
+    android:layout_marginRight="@dimen/public_mar_right_15px"
+    android:layout_marginLeft="@dimen/public_mar_left_15px"
+    app:cardBackgroundColor="@color/public_white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:contentPadding="8dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/public_font_18sp"
+            android:layout_marginBottom="8dp"
+            android:text="null"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="162dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+            <LinearLayout
+                android:gravity="right"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/nowprice"
+                    android:textSize="@dimen/public_font_24sp"
+                    android:text="null"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/oldprice"
+                    android:text="null"
+                    android:layout_margin="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/off"
+                    android:textColor="@color/white"
+                    android:background="#228B22"
+                    android:text="null"
+                    android:layout_margin="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</me.jessyan.armscomponent.commonres.view.AutoCardView>

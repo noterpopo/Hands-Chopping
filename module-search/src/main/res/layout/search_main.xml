@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            style="@style/Toolbar.MyStyle"
+            android:background="?attr/colorPrimary"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:titleTextColor="@color/white">
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/public_toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/public_mar_left_30px"
+                    android:layout_marginRight="@dimen/public_mar_right_30px"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/public_ic_arrow_back_white_24dp"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <TextView
+                android:id="@+id/public_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/public_font_18sp"
+                android:textColor="@color/public_white"
+                android:layout_gravity="center"
+                tools:text="Sale"/>
+        </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/search_listitem"
+            android:layout_marginTop="30px"
+            />
+    </LinearLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

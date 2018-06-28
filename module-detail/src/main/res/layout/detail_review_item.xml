@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.jessyan.armscomponent.commonres.view.AutoCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/public_mar_top_10px"
+    android:layout_marginBottom="@dimen/public_mar_bottom_16px"
+    android:layout_marginRight="@dimen/public_mar_right_15px"
+    android:layout_marginLeft="@dimen/public_mar_left_15px"
+    app:cardBackgroundColor="@color/public_white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:contentPadding="8dp">
+    <WebView
+        android:id="@+id/reviewitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></WebView>
+
+
+</me.jessyan.armscomponent.commonres.view.AutoCardView>

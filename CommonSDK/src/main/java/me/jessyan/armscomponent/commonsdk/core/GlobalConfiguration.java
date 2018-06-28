@@ -61,11 +61,6 @@ public class GlobalConfiguration implements ConfigModule {
                 .imageLoaderStrategy(new CommonGlideImageLoaderStrategy())
                 .globalHttpHandler(new GlobalHttpHandlerImpl(context))
                 .responseErrorListener(new ResponseErrorListenerImpl())
-                .gsonConfiguration((context1, gsonBuilder) -> {//这里可以自己自定义配置Gson的参数
-                    gsonBuilder
-                            .serializeNulls()//支持序列化null的参数
-                            .enableComplexMapKeySerialization();//支持将序列化key为object的map,默认只能序列化key为string的map
-                })
                 .okhttpConfiguration(new ClientModule.OkhttpConfiguration() {
                     @Override
                     public void configOkhttp(Context context, OkHttpClient.Builder builder) {

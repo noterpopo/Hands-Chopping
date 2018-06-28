@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
-    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     compileOptions {
         targetCompatibility JavaVersion.VERSION_1_8
@@ -35,7 +35,7 @@ android {
 }
 
 dependencies {
-    api fileTree(dir: 'libs', include: ['*.jar'])
+    api fileTree(include: ['*.jar'], dir: 'libs')
     api 'me.jessyan:arms:2.4.1'
     //tools
     api(rootProject.ext.dependencies["arouter"]) {

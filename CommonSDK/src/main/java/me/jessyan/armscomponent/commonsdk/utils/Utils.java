@@ -20,6 +20,8 @@ import android.content.Context;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 
+import java.util.ArrayList;
+
 /**
  * ================================================
  * Created by JessYan on 30/03/2018 17:16
@@ -53,5 +55,21 @@ public class Utils {
      */
     public static void navigation(Context context, String path) {
         ARouter.getInstance().build(path).navigation(context);
+    }
+
+    public static String arrrylistStringSerialization(ArrayList<String> arrayList){
+        StringBuilder builder=new StringBuilder();
+        for(int i=0;i<arrayList.size();++i){
+            builder.append(arrayList.get(i)+"&&&");
+        }
+        return builder.toString();
+    }
+
+    public static ArrayList<String> arraylistStringUnserialization(String s){
+        ArrayList<String> arrayList=new ArrayList<>();
+        for(String str:s.split("&&&")){
+            arrayList.add(str);
+        }
+        return arrayList;
     }
 }
